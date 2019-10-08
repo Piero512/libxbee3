@@ -202,10 +202,6 @@ typedef enum xbee_errors xbee_err;
 /* ######################################################################### */
 /* ######################################################################### */
 /* --- ver.c --- */
-EXPORT extern const char libxbee_revision[];
-EXPORT extern const char libxbee_commit[];
-EXPORT extern const char libxbee_committer[];
-EXPORT extern const char libxbee_buildtime[];
 
 
 /* ######################################################################### */

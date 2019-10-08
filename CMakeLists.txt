@@ -12,14 +12,6 @@ add_library(xbee3
         include/xbeep.h
         modes/debug/mode.c
         modes/debug/mode.h
-        modes/net/handlers.c
-        modes/net/handlers.h
-        modes/net/mode.c
-        modes/net/mode.h
-        modes/net/net.c
-        modes/net/net.h
-        modes/net/support.c
-        modes/net/support.h
         modes/xbee1/at.c
         modes/xbee1/at.h
         modes/xbee1/data.c
@@ -110,14 +102,6 @@ add_library(xbee3
         mode.h
         mutex.c
         mutex.h
-        net.c
-        net.h
-        net_callbacks.c
-        net_callbacks.h
-        net_handlers.c
-        net_handlers.h
-        net_io.c
-        net_io.h
         pkt.c
         pkt.h
         prepare.c

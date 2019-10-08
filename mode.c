@@ -28,7 +28,7 @@
 #include "conn.h"
 #include "ll.h"
 
-const struct xbee_mode * const modeList[] = { &mode_debug, &mode_net,&mode_xbee1, &mode_xbee2, &mode_xbee3, &mode_xbee5, &mode_xbee6b, &mode_xbeeZB };
+const struct xbee_mode * const modeList[] = { &mode_debug,&mode_xbee1, &mode_xbee2, &mode_xbee3, &mode_xbee5, &mode_xbee6b, &mode_xbeeZB };
 
 /* ######################################################################### */
 

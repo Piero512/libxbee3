@@ -32,7 +32,6 @@
 #include "mode.h"
 #include "rx.h"
 #include "tx.h"
-#include "net.h"
 #include "ll.h"
 
 struct xbee_ll_head *xbeeList = NULL;
@@ -103,9 +102,7 @@ xbee_err xbee_free(struct xbee *xbee) {
 	for (i = 0; i < 4; i++) usleep(1000000);
 	
 	xbee_threadDestroyMine(xbee);
-	
-	if (xbee->netInfo) xbee_netStop(xbee);
-	
+
 	if (xbee->mode && xbee->mode->shutdown) xbee->mode->shutdown(xbee);
 
 	xbee_log(20, "Finalizing shutdown procedure for libxbee instance @ %p", xbee);
