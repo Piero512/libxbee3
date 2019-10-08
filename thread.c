@@ -50,7 +50,7 @@ void *threadFunc(struct xbee_threadInfo *thread) {
 	xbee_err ret;
 	
 	xbee = thread->xbee;
-	pthread_cleanup_push(threadFunc_cleanup, thread);
+	pthread_cleanup_push((void (*)(void*) ) threadFunc_cleanup, thread);
 	
 	/* setup the thread info */
 	xsys_thread_key_set(threadInfoKey, thread);
