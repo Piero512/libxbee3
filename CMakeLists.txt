@@ -7,7 +7,7 @@ find_package(Threads REQUIRED)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
 add_compile_definitions(XBEE_NO_NET_SERVER)
-add_library(xbee3
+add_library(xbee3 SHARED
         include/xbee.h
         include/xbeep.h
         modes/debug/mode.c
