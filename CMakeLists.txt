@@ -119,3 +119,4 @@ add_library(xbee3 SHARED
         xsys.c
         xsys.h)
 target_link_libraries(xbee3 Threads::Threads)
+install(TARGETS xbee3 DESTINATION lib)
