@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 11)
 find_package(Threads REQUIRED)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+include_directories(include)
 
 add_compile_definitions(XBEE_NO_NET_SERVER)
 add_library(xbee3 SHARED
