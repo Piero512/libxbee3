@@ -8,7 +8,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 include_directories(include)
 
 add_compile_definitions(XBEE_NO_NET_SERVER)
-add_library(xbee3 SHARED
+add_library(xbee SHARED
         include/xbee.h
         include/xbeep.h
         modes/debug/mode.c
@@ -119,7 +119,7 @@ add_library(xbee3 SHARED
         xbeep.cpp
         xsys.c
         xsys.h)
-target_link_libraries(xbee3 Threads::Threads)
-install(TARGETS xbee3 DESTINATION lib)
+target_link_libraries(xbee Threads::Threads)
+install(TARGETS xbee DESTINATION lib)
 FILE(GLOB headers "${CMAKE_CURRENT_SOURCE_DIR}/include/*.h")
 install(FILES ${headers} DESTINATION include)
