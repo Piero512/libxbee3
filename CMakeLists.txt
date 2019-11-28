@@ -121,3 +121,5 @@ add_library(xbee3 SHARED
         xsys.h)
 target_link_libraries(xbee3 Threads::Threads)
 install(TARGETS xbee3 DESTINATION lib)
+FILE(GLOB headers "${CMAKE_CURRENT_SOURCE_DIR}/include/*.h")
+install(FILES headers DESTINATION include)
